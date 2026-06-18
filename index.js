@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const cartRoutes = require("./routes/cartRoutes");
+const cartRoutes = require("./Routes/cartRoutes");
 
 dotenv.config();
 
@@ -28,11 +28,11 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/products", require("./routes/productRoutes"));
-app.use("/api/orders", require("./routes/orderRoutes"));
+app.use("/api/auth", require("./Routes/authRoutes"));
+app.use("/api/products", require("./Routes/productRoutes"));
+app.use("/api/orders", require("./Routes/orderRoutes"));
 app.use("/api/cart", cartRoutes);
-app.use("/api/admin", require("./routes/adminRoutes"));
+app.use("/api/admin", require("./Routes/adminRoutes"));
 
 // Database
 mongoose
