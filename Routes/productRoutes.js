@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Product = require("../models/Product");
+const Product = require("../Models/product");
 const auth = require("../middleware/auth");
 
 // GET ALL PRODUCTS (PUBLIC)

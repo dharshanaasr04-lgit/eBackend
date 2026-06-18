@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 const auth = require("../middleware/auth");
-const Order = require("../models/Order");
-const User = require("../models/User");
+const Order = require("../Models/Order");
+const User = require("../Models/User");
 
 // ======================
 // CREATE ORDER (CHECKOUT)
