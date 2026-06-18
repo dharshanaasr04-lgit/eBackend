@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-frontend.vercel.app"
+      "https://efrontend-rho.vercel.app"
     ],
     credentials: true,
   })
